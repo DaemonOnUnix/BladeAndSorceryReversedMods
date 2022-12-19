@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAC4F8EA-8A2B-488D-9400-B91B9157FE7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UltimateFantasyPack</RootNamespace>
+    <AssemblyName>UltimateFantasyPack</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="ThunderRoad" />
+    <Reference Include="UnityEngine.AudioModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.ParticleSystemModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ancient.cs" />
+    <Compile Include="ArchWraith.cs" />
+    <Compile Include="ArcWraithMono.cs" />
+    <Compile Include="Atlantean.cs" />
+    <Compile Include="AtlanteanMono.cs" />
+    <Compile Include="Cooldown.cs" />
+    <Compile Include="DaggerFlip.cs" />
+    <Compile Include="DaggerFlipItem.cs" />
+    <Compile Include="DarkMono.cs" />
+    <Compile Include="DarkWeapons.cs" />
+    <Compile Include="DemonicExplosion.cs" />
+    <Compile Include="DemonicExplosionItem.cs" />
+    <Compile Include="DrakenFlame.cs" />
+    <Compile Include="DrakenFlameItem.cs" />
+    <Compile Include="Example.cs" />
+    <Compile Include="FireRing.cs" />
+    <Compile Include="FireRingMono.cs" />
+    <Compile Include="Gnomish.cs" />
+    <Compile Include="GnomishMono.cs" />
+    <Compile Include="Goblin.cs" />
+    <Compile Include="Goliath.cs" />
+    <Compile Include="GoliathMono.cs" />
+    <Compile Include="GroundPound.cs" />
+    <Compile Include="GroundPoundItem.cs" />
+    <Compile Include="Holy.cs" />
+    <Compile Include="HolyMono.cs" />
+    <Compile Include="IceSpike.cs" />
+    <Compile Include="ImbueCycle.cs" />
+    <Compile Include="ImbueCycleItem.cs" />
+    <Compile Include="ItemReturn.cs" />
+    <Compile Include="ItemReturnItem.cs" />
+    <Compile Include="LightningStrikeModule.cs" />
+    <Compile Include="LightningStrikeNew.cs" />
+    <Compile Include="MeteorCollision.cs" />
+    <Compile Include="ParticleCollisionHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="Vampire.cs" />
+    <Compile Include="VampireLifesteal.cs" />
+    <Compile Include="Vampiric.cs" />
+    <Compile Include="VampItem.cs" />
+    <Compile Include="Voidborne.cs" />
+    <Compile Include="VoidMono.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAC4F8EA-8A2B-488D-9400-B91B9157FE72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BloodMagic</RootNamespace>
+    <AssemblyName>BloodMagic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="IngameDebugConsole.Runtime" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.VFXModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PathEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quest\Conditions\Condition.cs" />
+    <Compile Include="Quest\Conditions\Destabilized.cs" />
+    <Compile Include="Quest\Conditions\Dismember.cs" />
+    <Compile Include="Quest\Conditions\Drain.cs" />
+    <Compile Include="Quest\Conditions\FromFarAway.cs" />
+    <Compile Include="Quest\Conditions\Headshot.cs" />
+    <Compile Include="Quest\Conditions\InAir.cs" />
+    <Compile Include="Quest\Conditions\Kill.cs" />
+    <Compile Include="Quest\Conditions\MainCondition.cs" />
+    <Compile Include="Quest\Conditions\Parry.cs" />
+    <Compile Include="Quest\Conditions\UsingWeapon.cs" />
+    <Compile Include="Quest\Quest.cs" />
+    <Compile Include="Quest\QuestHandler.cs" />
+    <Compile Include="Quest\Rewards\DarkXP.cs" />
+    <Compile Include="Quest\Rewards\DrainPower.cs" />
+    <Compile Include="Quest\Rewards\LightXP.cs" />
+    <Compile Include="Quest\Rewards\Reward.cs" />
+    <Compile Include="SaveData.cs" />
+    <Compile Include="Spell\Abilities\BloodBow.cs" />
+    <Compile Include="Spell\Abilities\BloodBulletAbility.cs" />
+    <Compile Include="Spell\Abilities\BloodDaggerAbility.cs" />
+    <Compile Include="Spell\Abilities\BloodDrain.cs" />
+    <Compile Include="Spell\Abilities\BloodSword.cs" />
+    <Compile Include="Spell\Abilities\BloodWave.cs" />
+    <Compile Include="Spell\Abilities\SpellAbilityManager.cs" />
+    <Compile Include="Spell\BloodBullet.cs" />
+    <Compile Include="Spell\BloodDagger.cs" />
+    <Compile Include="Spell\BloodSpell.cs" />
+    <Compile Include="Spell\CreatureDrainComponent.cs" />
+    <Compile Include="UI\AbilityInfo.cs" />
+    <Compile Include="UI\BookUIHandler.cs" />
+    <Compile Include="UI\QuestUIComponets.cs" />
+    <Compile Include="UI\SkillData.cs" />
+    <Compile Include="UI\SkillHandler.cs" />
+    <Compile Include="UI\SkillTreeInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

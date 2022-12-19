@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAC4F8EA-8A2B-488D-9400-B91B9157FEA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TotT</RootNamespace>
+    <AssemblyName>TotT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="ThunderRoad" />
+    <Reference Include="Unity.Addressables" />
+    <Reference Include="Unity.ResourceManager" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmmoModule.cs" />
+    <Compile Include="AmmoModuleMono.cs" />
+    <Compile Include="AmmoModuleParser.cs" />
+    <Compile Include="ArmModule.cs" />
+    <Compile Include="ArmModuleSave.cs" />
+    <Compile Include="BlackjackModule.cs" />
+    <Compile Include="BlackjackParser.cs" />
+    <Compile Include="BoltAmount.cs" />
+    <Compile Include="BoltLoaderMono.cs" />
+    <Compile Include="BoltType.cs" />
+    <Compile Include="ClimbingPick.cs" />
+    <Compile Include="ClimbingPickModule.cs" />
+    <Compile Include="ClimbingPickParser.cs" />
+    <Compile Include="CrossbowModule.cs" />
+    <Compile Include="CrossbowSave.cs" />
+    <Compile Include="DishonoredCrossbow.cs" />
+    <Compile Include="DishonoredFireBolt.cs" />
+    <Compile Include="DishonoredRopeBolt.cs" />
+    <Compile Include="DishonoredSleepDart.cs" />
+    <Compile Include="DishonoredStingBolt.cs" />
+    <Compile Include="ExpandingShield.cs" />
+    <Compile Include="ExtensionMethods\ExtensionMethods.cs" />
+    <Compile Include="FireBoltModule.cs" />
+    <Compile Include="GrapplingHook.cs" />
+    <Compile Include="GrapplingHookMono.cs" />
+    <Compile Include="GrapplingHookParser.cs" />
+    <Compile Include="GrooveSlingerLeftWristHolder.cs" />
+    <Compile Include="GrooveSlingerRightWristHolder.cs" />
+    <Compile Include="HiddenBlade.cs" />
+    <Compile Include="HiddenBladeMono.cs" />
+    <Compile Include="HiddenBladeParser.cs" />
+    <Compile Include="HiddenDagger.cs" />
+    <Compile Include="HiddenDaggerMono.cs" />
+    <Compile Include="HiddenDaggerParser.cs" />
+    <Compile Include="KnockOutBehaviour.cs" />
+    <Compile Include="LevelModuleTotT.cs" />
+    <Compile Include="ModuleHandWatcher.cs" />
+    <Compile Include="PBBDefault.cs" />
+    <Compile Include="PBBDefaultModule.cs" />
+    <Compile Include="PBBDefaultParser.cs" />
+    <Compile Include="PBBHolderModule.cs" />
+    <Compile Include="PBBHolderSave.cs" />
+    <Compile Include="PBBSleep.cs" />
+    <Compile Include="PBBSleepModule.cs" />
+    <Compile Include="PBBSleepParser.cs" />
+    <Compile Include="PBBSting.cs" />
+    <Compile Include="PBBStingModule.cs" />
+    <Compile Include="PBBStingParser.cs" />
+    <Compile Include="PhantomBlade.cs" />
+    <Compile Include="PhantomBladeBolt.cs" />
+    <Compile Include="PhantomBladeBoltHolder.cs" />
+    <Compile Include="PhantomBladeMono.cs" />
+    <Compile Include="PhantomBladeParser.cs" />
+    <Compile Include="PirateBlade.cs" />
+    <Compile Include="PirateBladeMono.cs" />
+    <Compile Include="PirateBladeParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RageAttackBehaviour.cs" />
+    <Compile Include="RailHandWatcher.cs" />
+    <Compile Include="RailMode.cs" />
+    <Compile Include="RailMounts.cs" />
+    <Compile Include="RailMountSave.cs" />
+    <Compile Include="RailMountsMono.cs" />
+    <Compile Include="RopeBoltModule.cs" />
+    <Compile Include="ShieldMono.cs" />
+    <Compile Include="ShieldParser.cs" />
+    <Compile Include="ShockModule.cs" />
+    <Compile Include="ShockModuleMono.cs" />
+    <Compile Include="ShockParser.cs" />
+    <Compile Include="SleepDartModule.cs" />
+    <Compile Include="SleepDartParser.cs" />
+    <Compile Include="StingBoltModule.cs" />
+    <Compile Include="ThiefBlackjack.cs" />
+    <Compile Include="toggleMethod.cs" />
+    <Compile Include="Wristbow.cs" />
+    <Compile Include="WristbowMono.cs" />
+    <Compile Include="WristbowParser.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
